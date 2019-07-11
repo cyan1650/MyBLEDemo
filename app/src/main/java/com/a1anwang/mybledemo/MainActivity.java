@@ -126,9 +126,9 @@ public class MainActivity extends AppCompatActivity {
     public AdvertiseData createAdvertiseData(byte[] data) {
         AdvertiseData.Builder mDataBuilder = new AdvertiseData.Builder();
 
-        mDataBuilder.addServiceUuid(ParcelUuid.fromString("0000ffe1-0000-1000-8000-00805f9b34fb"));
-        mDataBuilder.addServiceData(ParcelUuid.fromString("0000ae8f-0000-1000-8000-00805f9b34fb"), new byte[]{0x64, 0x12});
-        mDataBuilder.addManufacturerData(0x01AC, data);
+//        mDataBuilder.addServiceUuid(ParcelUuid.fromString("0000ffe1-0000-1000-8000-00805f9b34fb"));
+//        mDataBuilder.addServiceData(ParcelUuid.fromString("0000ae8f-0000-1000-8000-00805f9b34fb"), new byte[]{0x64, 0x12});
+        mDataBuilder.addManufacturerData(0x2211, data);
         AdvertiseData mAdvertiseData = mDataBuilder.build();
         return mAdvertiseData;
     }
